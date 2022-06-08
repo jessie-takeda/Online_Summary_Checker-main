@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="summary.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="Initialize()">
+    <div class="headers">
+        <h1>Pathways to Academic English Practice</h1>
+        <h1>Practice Summarizing: </h1>
+        <h3>Select a passage or enter your own.</h3>
+    </div>
+    <div class="main_stuff">
+        <div class="Drop-Down_Box">
+        
+            <br>
+            <select id="passage_select" onchange="GetPassage()">
+                <option value="default">What do you want to summarize today?</option>
+                <option value="Passage1">Worksheet Passage 1: Horses</option>
+                <option value="Passage2">Worksheet Passage 2: Intermodal Containers</option>
+                <option value="Custom">Enter My Own Text</option>
+            </select>
+        </div>
+        <br>
+        <div class="source" id="source_id">
+        <p style="text-align:left; font-size: 14px" id="source_text">Put words here.</p>
+        <br>
+        </div>
+        <br>
+        <textarea id="summary_text" rows="20" cols="70" placeholder="Type your summary here. &#10 &#10Your summary should be about 25~35% of the original passage.&#10 &#10Use the tips in Chapter 4 of Pathway to Academic English 3rd Edition when writing your summary."></textarea>
+        <br>
+        <button class="button_class" id="check_button" onclick="Check_Now()">Check Your Summary</button>
+        <br>
+    </div>
+    <div class="white"></div>
+    <div class="results_class" id="alltheresults" style="display:none">
+        <h2 style="text-align:center; color: crimson">Advice: </h2>
+        <h3 id="results_length" style="text-align:center">Length</h3>
+        <br>
+        <div id="length_graph" class="visual" style="width:80%; height:400px">
+            <canvas id="myLength" style="width:100%; max-width:700px; margin:auto"></canvas>
+        </div>
+        <br>
+        <p id="length_advice"></p>
+        <br>
+        <h3 id="results_repeating" style="text-align:center">Repeats</h3>
+        <div class ="visual" id="graph_container" style="width:80%; height:400px">
+            <canvas id="myChart" style="width:100%; max-width:700px; text-align: center; margin:auto"></canvas>
+        </div>
+        <p id="repeats_advice"></p>
+        <h2 style="text-align:center; color:crimson">Repeated 5-word Chunks</h2>
+        <p id="repeats_text"></p>
+    </div>
+    <script type="text/javascript" src="summary.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</body>
+
+
+</html>

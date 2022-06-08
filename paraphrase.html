@@ -1,0 +1,187 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="paraphrase.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main_stuff">
+        <h1>Pathways to Academic English Practice</h1>
+        <h2 style="color: purple">Paraphrasing Practice</h2>
+        <div class="Drop-Down_Box">
+            <label for="passage_select" style="font-weight: bold">What do you want to work on today?</label>
+            <br>
+            <select id="passage_select" onchange="GetPassage()">
+                <option value="default">Select Practice</option>
+                <option value="Part1">Pathways Worksheet "Paraphrasing Practice" Part 1</option>
+                <option value="Part2">Pathways Worksheet "Paraphrasing Practice" Part 2</option>
+                <option value="Extra_Practice">Step By Step Practice</option>
+                <option value="Custom">Enter My Own Text</option>
+            </select>
+        </div>
+        <br>
+    </div>
+
+
+        <div class="part1" id="part1_div" style="display:none">
+            <label for="p1q1" class="question_sentence" id="p1q1_label"><br><b><u>Directions:</b></u>
+                <br>Change the voice of the <b>bolded</b> words. Change the part of speech of the <u>underlined</u> words. 
+                <p><p style="color: purple;"><b>Change the voice</b> means for example, to change a sentence from active (SVO) to passive (OVS) or vice versa. <br><br> <u>Change the part of speech</u> means to add or subtract suffixes to, for example, change word from a noun to an adjective.</p>
+                <hr style="height:3px">
+                <br>
+                1. Many scholars have claimed that starting the school day later in the morning <b>will increase</b> students' ability to pay attention.</label>
+                <br>
+                <input type="text" class="answer_box" id="p1q1" placeholder="Type your paraphrase here.">
+                    <br>
+                    <div id="answeredp1q1" style="display:none">
+                    <br>
+                    <label for="p1q1_feedback" class="feedback_label">Advice:</label><p id="p1q1_feedback" class="feedback">Feedback goes here.</p><button id="p1q1_button" class="example_ask_button" onclick="Getp1q1()">See Example Answer</button>
+                    </div>
+                <p id="p1q1_example" class="example_answer" style="display:none">Many scholars have claimed that students' ability to pay attention <b>will be increased</b> by starting the school day later in the morning.</p>
+                <br>
+<br>
+            <label for="p1q2" class="question_sentence" id="p1q2_label">2. Raising taxes, cutting spending, and relying more on volunteers <b>improve</b> social structures.</label>
+                <br>
+                <input type="text" class="answer_box" id="p1q2" placeholder="Type your paraphrase here.">
+                    <br>
+                    <div id="answeredp1q2" style="display:none">
+                        <br>
+                    <label for="p1q2_feedback" class="feedback_label">Advice:</label><p id="p1q2_feedback" class="feedback">Feedback goes here.</p><button id="p1q2_button" class="example_ask_button" onclick="Getp1q2()">See Example Answer</button>
+                    </div>
+                <p id="p1q2_example" class="example_answer" style="display:none">Social structures are <b>improved by</b> raising taxes, cutting spending, and relying more on volunteers.</p>
+                <br>
+<br>
+                <label for="p1q3" class="question_sentence" id="p1q3_label">3. English is either an <u>officially used</u> language or one of several languages used in almost 60 countries, and is learned <u>in an extensive amount</u> as a second language.</label>
+                <br>
+                <input type="text" class="answer_box" id="p1q3" placeholder="Type your paraphrase here.">
+                    <br>
+                    <div id="answeredp1q3" style="display:none">
+                        <br>
+                    <label for="p1q3_feedback" class="feedback_label">Advice:</label><p id="p1q3_feedback" class="feedback">Feedback goes here.</p><button id="p1q3_button" class="example_ask_button" onclick="Getp1q3()">See Example Answer</button>
+                    </div>
+                <p id="p1q3_example" class="example_answer" style="display:none">English is either an official language or one of several languages used in almost 60 countries, and is learned extensively as a second language.</p>
+                <br>
+<br>
+                <label for="p1q4" class="question_sentence" id="p1q4_label">4. Self-concept, <u>a collection of</u> beliefs about oneself, is <u>different</u> from self-awareness, which refers to <u>how consistent</u> knowledge of the real world is to one's attitudes and dispositions.</label>
+                <br>
+                <input type="text" class="answer_box" id="p1q4" placeholder="Type your paraphrase here.">
+                    <br>
+                    <div id="answeredp1q4" style="display:none">
+                        <br>
+                    <label for="p1q4_feedback" class="feedback_label">Advice:</label><p id="p1q4_feedback" class="feedback">Feedback goes here.</p><button id="p1q4_button" class="example_ask_button" onclick="Getp1q4()">See Example Answer</button>
+                    </div>
+                <p id="p1q4_example" class="example_answer" style="display:none">Self-concept, a collective belief about oneself, differs from self-awareness, which refers to consistency between knowledge of the real world and one's attitudes and dispositions.</p>
+                <br>
+<br>
+                <label for="p1q5" class="question_sentence" id="p1q5_label">5. <i>Acer leipoense</i>, a species of Maple tree that grows in the <u>southwest</u> part of China, <b>is often sought</b> by people who live <u>locally</u> in Sichuan.</label>
+                <br>
+                <input type="text" class="answer_box" id="p1q5" placeholder="Type your paraphrase here.">
+                    <br>
+                    <div id="answeredp1q5" style="display:none">
+                        <br>
+                    <label for="p1q5_feedback" class="feedback_label">Advice:</label><p id="p1q5_feedback" class="feedback">Feedback goes here.</p><button id="p1q5_button" class="example_ask_button" onclick="Getp1q5()">See Example Answer</button>
+                    </div>
+                <p id="p1q5_example" class="example_answer" style="display:none">Local people (or locals) living in Sichuan often seek Acer leipoense, a species of Maple tree that grows in southwestern China.</p>
+                <br>
+<br>
+                <label for="p1q6" class="question_sentence" id="p1q6_label">6. The red-billed streamertail, a member of the hummingbird family, <u>generally</u> <b>feeds</b> on the nectar from flowers indigenous to Jamaica.</label>
+                <br>
+                <input type="text" class="answer_box" id="p1q6" placeholder="Type your paraphrase here.">
+                    <br>
+                    <div id="answeredp1q6" style="display:none">
+                        <br>
+                    <label for="p1q6_feedback" class="feedback_label">Advice:</label><p id="p1q6_feedback" class="feedback">Feedback goes here.</p><button id="p1q6_button" class="example_ask_button" onclick="Getp1q6()">See Example Answer</button>
+                    </div>
+                <p id="p1q6_example" class="example_answer" style="display:none">In general, the nectar from flowers indigenous to Jamaica are fed on by the red-billed steamertail, a member of the hummingbird family.</p>
+                <br>
+<br>
+                <label for="p1q7" class="question_sentence" id="p1q7_label">7. The Kidston Dam <b>provided</b> water for the Kidston Gold Mine, which closed in 2001.</label>
+                <br>
+                <input type="text" class="answer_box" id="p1q7" placeholder="Type your paraphrase here.">
+                    <br>
+                    <div id="answeredp1q7" style="display:none">
+                        <br>
+                    <label for="p1q7_feedback" class="feedback_label">Advice:</label><p id="p1q7_feedback" class="feedback">Feedback goes here.</p><button id="p1q7_button" class="example_ask_button" onclick="Getp1q7()">See Example Answer</button>
+                    </div>
+                <p id="p1q7_example" class="example_answer" style="display:none">Water for the Kidston Gold Mine, which closed in 2001, was provided by the Kidston Dam.</p>
+                <br>
+<br>
+                <label for="p1q8" class="question_sentence" id="p1q8_label">8. The Confederate Army of Northern Virginia made a retreat from the city of Gettysburg because it <b>was defeated</b> by the Union Army, and now the event <b>is remembered</b> by us as The Retreat from Gettysburg.</label>
+                <br>
+                <input type="text" class="answer_box" id="p1q8" placeholder="Type your paraphrase here.">
+                    <br>
+                    <div id="answeredp1q8" style="display:none">
+                        <br>
+                    <label for="p1q8_feedback" class="feedback_label">Advice:</label><p id="p1q8_feedback" class="feedback">Feedback goes here.</p><button id="p1q8_button" class="example_ask_button" onclick="Getp1q8()">See Example Answer</button>
+                    </div>
+                <p id="p1q8_example" class="example_answer" style="display:none">The Confederate Army of Northern Virginia retreated from the city of Gettysburg because the Union Army defeated it, and now we remember the event as The Retreat from Gettysburg.</p>
+                <br>
+        <div class="check_buttons2"><button id="check_part1" class="check_button" onclick="CheckPart1()">Check Answers</button></div>
+        </div>
+<br>
+        <div class="part2" id="part2_div" style="display:none">
+            <label for="p2q1" class="question_sentence" id="p2q1_label">1. The SS Bury was a passenger vessel that was built to help with Britain's Great Central Railway in 1911.</label>
+                <br>
+                <input type="text" class="answer_box" id="p2q1" placeholder="Type your paraphrase here.">
+                    <br>
+                    <div id="answeredp2q1" style="display:none">
+                        <br>
+                    <label for="p2q1_feedback" class="feedback_label">Advice:</label><p id="p2q1_feedback" class="feedback">Feedback goes here.</p><button id="p2q1_button" class="example_ask_button" onclick="Getp2q1()">See Example Answer</button>
+                    </div>
+                <p id="p2q1_example" class="example_answer" style="display:none">The SS Bury was a passenger ship built to assist with Brittain's Great Central Railway in 1911.</p>
+                <br>
+<br>
+        <div class="check_buttons2"><button id="check_part2" style="margin: auto" class="check_button" onclick="CheckPart2()">Check Answers</button></div>
+        </div>
+        
+        <div class="Extra" id="extra_practice" style="display:none">
+            <h3 id="extra_directions">Begin by changing the parts of speech of the underlined words</h3>
+            <br>
+            <label for="eq1" class="question_sentence" id="eq1_label">While it is a <u>rarity</u> for orcas to attack humans in the wild, four humans have been killed due to <u>interacting</u> with orcas that were in <u>captivity.</u></label>
+            <br>
+            <input type="text" class="answer_box" id="eq1" placeholder="Type your paraphrase here.">
+            <br>
+            <br>
+            <div id="answeredeq1" style="display:none">
+                <label for="eq1_feedback" class="feedback_label">Advice:</label><p id="eq1_feedback" class="feedback">Feedback goes here.</p><button id="eq1_button" class="example_ask_button" onclick="GetEq1P1()">See Example Answer</button>
+            </div>
+            <p id="eq1p1_example" class="example_answer" style="display:none">The first sentence answer should go here.</p>
+            <br>
+        
+            <label for="eq2" class="question_sentence" id="eq2_label">David Scott, who is an astronaut from <u>America</u>, was accepted into the US Military Academy in 1954, and he became the seventh person to walk on the moon in 1967 thanks to the <u>intense</u> training that he received there.</label>
+            <br>
+            <input type="text" class="answer_box" id="eq2" placeholder="Type your paraphrase here.">
+            <br>
+            <br>
+            <div id="answeredeq2" style="display:none">
+                <label for="eq2_feedback" class="feedback_label">Advice:</label><p id="eq2_feedback" class="feedback">Feedback goes here.</p><button id="eq2_button" class="example_ask_button" onclick="GetEq1P2()">See Example Answer</button>
+            </div>
+            <p id="eq1p2_example" class="example_answer" style="display:none">The first sentence answer should go here.</p>
+            <br>
+        <div id="button_container" style="margin:auto; text-align: center">
+        <button id="check_extra_back" class="check_button2" onclick="CheckExtraBK()" style="display:none">Previous Stage</button>
+        <button id="check_extra" class="check_button" onclick="CheckExtra()">Check Answers</button>
+        <button id="check_extra_next" class="check_button2" onclick="CheckExtraNXT()" style="display:none">Next Stage</button>
+        </div>
+        </div>
+
+        <div class="custom" id="custom_practice" style="display:none">
+            <label for="cq1" class="question_sentence">Write or copy-and-paste your original sentence here:</label>
+            <br>
+            <textarea id="cq1" class="custom_box" rows="3" cols="70" placeholder="Write or copy-and-paste your original sentence here"></textarea>
+            <br>
+            <br>
+            <label for="cqa" class="question_sentence">Write your paraphrase here:</label>
+            <br>
+            <textarea id="cqa" class="custom_box" rows="3" cols="70" placeholder="Write your paraphrase here"></textarea>
+            <br>
+            <br>
+            <button id="check_custom" class="check_button" onclick="CheckCustom()">Check Paraphrase</button>
+            <p id="cq_feedback" class="example_answer" style="display:none">Feedback will go here.</p>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="paraphrase.js"></script>
+</body>
+
+
+</html>
